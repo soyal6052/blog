@@ -1,0 +1,31 @@
+{
+  "name": "appenginetest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tslint -p .",
+    "start": "node lib/server.js",
+    "gcp-build": "tsc -p .",
+    "prepare": "npm run gcp-build"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "10.x.x"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-validator": "^5.3.1",
+    "express-winston": "^3.2.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.0",
+    "@types/node": "^12.6.9",
+    "@types/uuid": "^3.4.5",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  }
+}
